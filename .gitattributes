@@ -1,0 +1,4 @@
+# 统一换行，避免 Windows 上把整仓库标记成已修改
+* text=auto eol=lf
+*.png binary
+*.csv text eol=lf
