@@ -109,7 +109,7 @@ node $SK/scripts/verify.js --dir . --mp4 <root>-1080x1920.mp4
 | 配音起音 | 最大偏差 ≤ 50 ms |
 | 音效起音 | 全部 ≤ 33 ms（渐入噪声可能误报，需人工判断） |
 | 响度时长 | 时长 ≈ timeline，mean −19 ± 2.5 dB，max ≤ −0.5 dB |
-| 冻结静止 | 段内两帧 PSNR > 45 dB | 目检 `-frozen.png` 或抽两帧比 |
+| 冻结静止 | 段内两帧 PSNR > 45 dB（目检 `-frozen.png` 或抽两帧比） |
 | 成片偏移 | 0 ms |
 
 冻结静止无法用脚本自动判，靠第 7 步的 `-frozen.png` 目检（或对比同场两张冻结图的 PSNR，应 > 45 dB）。
