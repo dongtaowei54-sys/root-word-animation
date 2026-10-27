@@ -1,0 +1,34 @@
+{
+  "name": "root-word-animation",
+  "version": "1.0.0",
+  "description": "Turn an English root word into a 9:16 short video for vocabulary learning (design table -> geometry animation -> TTS -> frame-accurate render -> verified MP4).",
+  "license": "MIT",
+  "private": true,
+  "bin": {
+    "root-anim-build": "scripts/build-root.js",
+    "root-anim-snap": "scripts/snap.js",
+    "root-anim-render": "scripts/render.js",
+    "root-anim-mix": "scripts/mix.js",
+    "root-anim-verify": "scripts/verify.js",
+    "root-anim-audio": "scripts/make-audio.js"
+  },
+  "scripts": {
+    "example:build": "node scripts/build-root.js --dir examples/ced",
+    "example:snap": "node scripts/snap.js --dir examples/ced"
+  },
+  "devDependencies": {
+    "playwright": "^1.47.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "root-word",
+    "vocabulary",
+    "animation",
+    "svg",
+    "text-to-speech",
+    "short-video",
+    "playwright"
+  ]
+}
